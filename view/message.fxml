@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="errorWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="168.0" prefWidth="281.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShowErrorController">
+   <children>
+      <GridPane layoutX="3.0" layoutY="13.0" prefHeight="152.0" prefWidth="273.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="73.33331298828125" minHeight="10.0" prefHeight="47.666666666666664" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="142.66668701171875" minHeight="10.0" prefHeight="106.33333333333334" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fx:id="titleError" strokeType="OUTSIDE" strokeWidth="0.0" text="ERROR">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="textError" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

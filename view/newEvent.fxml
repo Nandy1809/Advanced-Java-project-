@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewEventController">
+    <children>
+        <Text layoutX="100.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Event Post" underline="true">
+            <font>
+                <Font name="Segoe UI Bold" size="18.0" />
+            </font>
+        </Text>
+
+        <Label layoutX="50.0" layoutY="88.0" text="Title :" />
+        <TextField fx:id="eventTitle" layoutX="120.0" layoutY="84.0" prefHeight="25.0" prefWidth="182.0" />
+
+        <Label layoutX="36.0" layoutY="127.0" text="Description : " />
+        <TextArea fx:id="eventDesc" layoutX="120.0" layoutY="127.0" prefHeight="67.0" prefWidth="182.0" />
+
+        <Label layoutX="42.0" layoutY="218.0" text="Venue : " />
+        <TextField fx:id="eventVenue" layoutX="124.0" layoutY="214.0" prefHeight="25.0" prefWidth="174.0" />
+
+        <Label layoutX="47.0" layoutY="259.0" text="Date :" />
+        <DatePicker fx:id="eventDate" layoutX="124.0" layoutY="255.0" />
+
+        <Label layoutX="37.0" layoutY="305.0" text="Capacity :" />
+        <TextField fx:id="eventCapacity" layoutX="124.0" layoutY="301.0" prefHeight="25.0" prefWidth="174.0" />
+
+        <Button fx:id="createNewEvent" layoutX="63.0" layoutY="389.0" mnemonicParsing="false" onAction="#createEventOnClick" prefHeight="25.0" prefWidth="88.0" text="Create" />
+        <Button layoutX="182.0" layoutY="389.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Cancel" />
+
+        <Label layoutX="38.0" layoutY="351.0" text="Select Image : " />
+        <Button fx:id="eventImage" layoutX="125.0" layoutY="347.0" mnemonicParsing="false" onAction="#selectImage" text="Browse.." />
+
+    </children>
+</AnchorPane>

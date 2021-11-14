@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="376.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewJobController">
+    <children>
+        <Text layoutX="106.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Job Post" underline="true">
+            <font>
+                <Font name="Segoe UI Bold" size="18.0" />
+            </font>
+        </Text>
+
+        <Label layoutX="50.0" layoutY="88.0" text="Title :" />
+        <TextField fx:id="jobTitle" layoutX="120.0" layoutY="84.0" prefHeight="25.0" prefWidth="182.0" />
+
+        <Label layoutX="36.0" layoutY="127.0" text="Description : " />
+        <TextArea fx:id="jobDescc" layoutX="120.0" layoutY="127.0" prefHeight="67.0" prefWidth="182.0" />
+
+        <Label layoutX="27.0" layoutY="216.0" text="Proposed Price :" />
+        <TextField fx:id="jobProposedPrice" layoutX="120.0" layoutY="212.0" prefHeight="25.0" prefWidth="182.0" />
+
+        <Label layoutX="122.0" layoutY="237.0" text="* Enter number only" textFill="#fe3030">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Label>
+
+        <Button fx:id="createNewJob" layoutX="63.0" layoutY="318.0" mnemonicParsing="false" onAction="#createJobOnClick" prefHeight="25.0" prefWidth="88.0" text="Create" />
+        <Button layoutX="182.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Cancel" />
+      <Label layoutX="28.0" layoutY="270.0" text="Select Image :" />
+      <Button fx:id="image" layoutX="122.0" layoutY="266.0" mnemonicParsing="false" onAction="#selectImage" prefHeight="25.0" prefWidth="88.0" text="Browse..." />
+
+    </children>
+</AnchorPane>

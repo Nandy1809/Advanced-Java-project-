@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="sale_reply" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="169.0" prefWidth="306.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReplyToSaleController">
+   <children>
+      <Text fill="#1e30bb" layoutX="80.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Offer">
+         <font>
+            <Font name="Consolas Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="replyText" layoutX="80.0" layoutY="67.0" />
+      <Button fx:id="submitReply" layoutX="108.0" layoutY="107.0" mnemonicParsing="false" onAction="#addSaleReply" text="Add Reply" />
+   </children>
+</AnchorPane>

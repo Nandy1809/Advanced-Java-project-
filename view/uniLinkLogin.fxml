@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="246.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <children>
+        <Text fill="GREEN" layoutX="137.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNILINK APP">
+            <font>
+                <Font name="Corbel Bold" size="18.0" />
+            </font>
+        </Text>
+
+        <TextField fx:id="loginDetails" layoutX="105.0" layoutY="70.0" prefHeight="25.0" prefWidth="170.0" />
+        <Text layoutX="153.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Login ID" />
+        <Button fx:id="loginButton" layoutX="168.0" layoutY="104.0" mnemonicParsing="false" onAction="#loginCliked" text="Login" />
+
+        <Text fx:id="loginMessage" fill="#df0606" layoutX="24.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Consolas Bold" size="13.0" />
+         </font></Text>
+
+    </children>
+</Pane>

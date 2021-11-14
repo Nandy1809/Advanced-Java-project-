@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UniLinkController">
+    <children>
+
+        <!--Top Menubar-->
+        <MenuBar fx:id="menu_bar" layoutX="219.0" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="UniLink">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#developerInformation" text="Developer Information" />
+                        <MenuItem mnemonicParsing="false" onAction="#quitApplication" text="Quit UniLink" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Data">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#exportDataToFile" text="Export" />
+                        <MenuItem mnemonicParsing="false" onAction="#importDataFromFile" text="Import" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+        <ToolBar layoutX="154.0" layoutY="25.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <items>
+                <Button mnemonicParsing="false" onAction="#createNewSale" text="New Sale" />
+                <Button mnemonicParsing="false" onAction="#createNewEvent" text="New Event" />
+                <Button mnemonicParsing="false" onAction="#createNewJob" text="New Job" />
+                <Label text="Type:" translateX="70.0" />
+                <ComboBox fx:id="type" prefHeight="25.0" prefWidth="27.0" translateX="70.0" />
+                <Label text="Creator:" translateX="100.0" />
+                <ComboBox fx:id="creator" prefHeight="25.0" prefWidth="27.0" translateX="100.0" />
+                <Label text="Status :" translateX="120.0" />
+                <ComboBox fx:id="status" prefHeight="25.0" prefWidth="27.0" translateX="120.0" />
+            </items>
+        </ToolBar>
+
+        <!-- Header, User name and Log out button -->
+        <AnchorPane layoutX="151.0" layoutY="66.0" maxHeight="40.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <GridPane alignment="CENTER" layoutX="182.0" layoutY="5.0" maxHeight="40.0" prefHeight="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                        <Text fx:id="user_name" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#logoutClicked" text="Log Out" GridPane.columnIndex="2" />
+                    </children>
+                </GridPane>
+            </children>
+        </AnchorPane>
+
+      <StackPane fx:id="stackPane" layoutY="136.0" prefHeight="306.0" prefWidth="692.0" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-46.0" />
+
+    </children>
+</AnchorPane>

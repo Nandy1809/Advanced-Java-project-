@@ -1,0 +1,5 @@
+.list-cell {
+    /*-fx-border-width: 2px;*/
+    -fx-background-insets: 4 0 4 0 ;
+    -fx-padding: 10px 0px 10px 0px;
+}

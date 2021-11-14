@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:controller="controller.PostEditController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox layoutX="13.0" layoutY="23.0" prefHeight="57.0" prefWidth="590.0" style="-fx-border-color: #30BDE4;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#goBackToMainPage" prefHeight="25.0" prefWidth="139.0" text="Back to Main Window" translateX="28.0" translateY="14.0" />
+                <Text fx:id="title" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" translateX="135.0" translateY="18.0" />
+            </children>
+        </HBox>
+<!--        maxWidth="295.33331298828125"-->
+<!--        maxWidth="349.3333282470703"-->
+        <GridPane layoutX="200.0" layoutY="67.0" prefHeight="165.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES"  minWidth="10.0" prefWidth="250.6666717529297" />
+                <ColumnConstraints hgrow="SOMETIMES"  minWidth="10.0" prefWidth="349.3333282470703" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ImageView fitHeight="114.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" translateY="-20.0" GridPane.halignment="CENTER" />
+                <Button mnemonicParsing="false" text="Upload Image" translateY="62.0" GridPane.halignment="CENTER" />
+                <Button fx:id="closePost" mnemonicParsing="false" onAction="#closePost" text="Close Post" translateX="32.0" translateY="63.0" GridPane.columnIndex="1" />
+                <Button fx:id="deletePost" mnemonicParsing="false" onAction="#deletePost" text="Delete Post" translateX="132.0" translateY="63.0" GridPane.columnIndex="1" />
+                <Button fx:id="savePost" mnemonicParsing="false" onAction="#savePost" text="Save" translateX="239.0" translateY="63.0" GridPane.columnIndex="1" />
+                <TextArea fx:id="details" prefHeight="165.0" prefWidth="146.0" GridPane.columnIndex="1">
+                    <GridPane.margin>
+                        <Insets bottom="40.0" left="30.0" right="30.0" />
+                    </GridPane.margin>
+                </TextArea>
+            </children>
+
+        </GridPane>
+
+        <TableView fx:id="replyTable" layoutX="167.0" layoutY="233.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="userId" prefWidth="289.33332312107086" text="C1" />
+                <TableColumn fx:id="offer" prefWidth="309.9999694824219" text="C2" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
